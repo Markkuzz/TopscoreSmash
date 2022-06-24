@@ -11,6 +11,16 @@ hamBurger.addEventListener('click', ()=>{
     logo.classList.toggle('active')
 })
 
+document.querySelectorAll('.link').forEach(n=>n.addEventListener('click', ()=>{
+    hamBurger.classList.remove('active');
+    nav.classList.remove('active');
+    body.classList.remove('active');
+    logo.classList.remove('active')
+}))
+
+
+
+
 // POPUP
 
 const openButton = document.querySelectorAll('[data-popup-target]');
